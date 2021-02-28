@@ -1,0 +1,253 @@
+@font-face {
+  src: url(./FONTS/plantc.ttf);
+  font-family: plant;
+}
+@font-face {
+  src: url(./FONTS/PoetsenOne-Regular.ttf);
+  font-family: heading;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "plant";
+  scroll-behavior: smooth;
+}
+.resume {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+.left-container {
+  width: 30%;
+  padding: 4vw;
+  background: #f7b73d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 100%;
+  padding-top: 100px;
+  padding-bottom: 500px;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 3rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 4px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px dotted #fff;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "heading";
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.rating {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+h3 {
+  font-family: "heading";
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+.progress-bar {
+  width: 100%;
+  height: 1vw;
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  padding: 2px;
+}
+.progress {
+  width: 50%;
+  height: 100%;
+  background: #f7b73d;
+  border-radius: 14px;
+}
+#skills {
+  width: 70%;
+}
+#communications {
+  width: 40%;
+}
+#academics {
+  width: 90%;
+}
+.triangle2 {
+  position: absolute;
+  bottom: 17%;
+  right: 10%;
+}
+.triangle3 {
+  position: absolute;
+  bottom: 6%;
+  left: 20%;
+}
+.triangle1 {
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+}
+.right-container {
+  width: 70%;
+  background-image: linear-gradient(
+      to top right,
+      rgba(245, 246, 252, 0.52),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(./Ellipse\ 2.svg);
+  background-size: cover;
+  padding: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h2 {
+  font-size: 3rem;
+  font-family: "heading";
+  text-align: center;
+}
+ul {
+  font-size: 1.5rem;
+  list-style: none;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+#job {
+  display: none;
+}
+.overlay {
+  display: none;
+}
+.mbl-footer {
+  display: none;
+}
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  ul {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 760px) {
+  .right-container {
+    display: none;
+  }
+  .left-container {
+    width: 100%;
+    padding: 4rem;
+  }
+  h1 {
+    font-size: 12vw;
+  }
+  #job {
+    display: block;
+    font-size: 6vw;
+    font-weight: 800;
+    font-family: "heading";
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  .img {
+    width: 60%;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+  .progress-bar {
+    height: 0.8rem;
+  }
+  .mbl-footer {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    background: rgba(230, 163, 40, 0.95);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .link i {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .link a {
+    margin-top: 5px;
+    text-decoration: none;
+    color: #000;
+    font-family: "heading";
+  }
+  .overlay {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(230, 163, 40, 0.7);
+  }
+  .inner {
+    width: 60%;
+    height: 60%;
+    background: #f7b73d;
+    padding: 3rem;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .inner h3 {
+    font-size: 6vw;
+    margin-top: 20px;
+    color: #fff;
+  }
+  ul {
+    list-style: disc;
+    font-size: 4vw;
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px 5px;
+    border: 1px dotted #fff;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s;
+  }
+  .close:hover {
+    transform: translateY(3px);
+  }
+}
